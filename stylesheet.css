@@ -8,7 +8,15 @@ height: auto;
 }
 
 .logo img{
-    width: 130px;
+    width: 110px;
+    margin-left: -20%;
+    margin-top: -10%;
+}
+
+.navheader{
+  background-color: #88b9bc;
+  height: 60PX;
+  width: 100%;
 }
 
 li{
@@ -18,7 +26,7 @@ li{
 .navli, a{
     text-decoration: none;
     font-family: Raleway;
-    font-size: 1rem;
+    font-size: 12PX;
     font-family: Raleway;
     color: #5b412e;
 
@@ -50,7 +58,7 @@ header{
 
 .navbar .links{
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
 
 }
 
@@ -130,6 +138,7 @@ header{
   height: 35px;
   background-color: white;
   border-radius: 50px;
+
 }
 
 .search-input {
@@ -146,6 +155,7 @@ header{
 }
 
 .cartIcone img{
+  margin-right: -15%;
     transition: scale 0.2 ease;
     cursor: pointer;
 }
