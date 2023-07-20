@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==
+    " crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="SignUpBody">
+
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#"><img src="Coffee_Logo_copy-removebg-preview.png"></a></div>
+            <ul class="links">
+                <li><a href="index.html" class="navli"> Home </a></li>
+                <li><a href="products.html" class="navli"> Products </a></li>
+                <li><a href="aboutUs.html" class="navli"> About Us </a></li>
+                <li><a href="contactUs.html" class="navli"> Contact Us </a></li>
+            </ul>
+
+            <a><div class="search">
+                <img class="search-icon" src="search.png" width="25px" height="25px" alt="search">
+                <input type="text" placeholder="Search" class="search-input">
+            </div></a>
+            <a class="cartIcone"> <img src="cart.png" alt="cart" width="25px" height="25px" class="cartImage"></a>
+            <a href="signUp.html" class="action_btn"> Sign Up </a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="index.html" class="navli"> Home </a></li>
+                <li><a href="products.html" class="navli"> Products </a></li>
+                <li><a href="aboutUs.html" class="navli"> About Us </a></li>
+                <li><a href="contactUs.html" class="navli"> Contact Us </a></li>
+                <li><a href="signUp.html" class="action_btn"> Sign Up </a></li>
+        </div>
+    </header>
+     <!-- page Content -->
+
+     <div class="signUpPage">
+
+        <div class="log">
+            <div class="SignUpLogo"> <img src="pcb logo.png" class="pcbLogo"></div>
+        </div>
+
+    <div class="SignUpFormDiv">
+        <h1 class="signUpHeadding"> Sign Up</h1>
+        <div class="signUpIcons">
+            <a><img class="apple" src="Apple.png"></a>
+            <a><img class="google" src="Google.png"></a>
+            <a><img class="facebook" src="FaceBook.png"></a>
+        </div>
+
+        <p class="Signpara1"> Or Create an Account</p>
+
+        <form class="signUpForm">
+            <input type="text" placeholder="Full Name" class="name">
+            <input type="text" placeholder="Email" class="email">
+            <div class="password">
+                <input type="password" placeholder="Password" class="passwordfeild">
+                <img src="eye 1.png" width="24px" height="24px" style="margin-right: 10%; margin-top: 3%;">
+            </div>
+            <div class="confirmPassword">
+                <input type="password" placeholder="Confirm Password" class="Confirmfeild">
+                <img src="eye 1.png" width="24px" height="24px" style="margin-right: 10%; margin-top: 3%;">
+            </div>
+            <input type="button" value="Sign Up" class="signupBtn">
+            <p class="Signpara2">Already have an account <a class=" SignInLink">Sign In</a></p> 
+            
+
+        </form>
+    </div>
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footerContainer">
+        <p class="copyRights">© 2023 Premuim.com <a href="#" class="policy"> Terms & Policies</a> </p>
+        </div>
+    </footer>
+
+      <!-- Script -->
+
+      <script>
+        const toggleBtn= document.querySelector('.toggle_btn')
+        const toggleBtnIcon= document.querySelector('.toggle_btn i')
+        const dropDownMenu= document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick= function(){
+            dropDownMenu.classList.toggle('open')
+            const isOpen= dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList= isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+    
+</body>
+</html>
